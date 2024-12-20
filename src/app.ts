@@ -19,6 +19,11 @@ app.use((req, res, next) => {
   next();
 });
 
+// Root route
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Server is running' });
+});
+
 // Routes
 app.use('/api/transactions', transactionRoutes);
 
