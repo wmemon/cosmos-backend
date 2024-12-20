@@ -16,6 +16,16 @@
       }
     },
     {
+      "src": "/",
+      "dest": "dist/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/transactions/health",
+      "dest": "dist/server.js",
+      "methods": ["GET"]
+    },
+    {
       "src": "/(.*)",
       "dest": "dist/server.js"
     }

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "ts-node-dev src/server.ts",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.json",
     "vercel-build": "npm run build"
   },
   "dependencies": {
@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
